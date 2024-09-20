@@ -1,0 +1,25 @@
+{
+  "name": "restapi-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev:1": "node --watch app.js",
+    "dev:2": "nodemon routing.js",
+    "dev:3": "node --watch express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.21.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "standard": "^17.1.2"
+  }
+}
