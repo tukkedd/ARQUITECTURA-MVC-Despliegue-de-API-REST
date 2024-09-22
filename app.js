@@ -9,17 +9,12 @@ import { corsMiddleware } from './middlewares/cors.js'
 // const require = createRequire(import.meta.url)
 // const movies = require('./movies.json')
 
-
-
 const app = express()
 app.use(json())
+app.use(corsMiddleware())
 app.disable('x-powered-by')
 
-app.use(corsMiddleware())
-
 app.use('/movies', moviesRouter)
-
-
 
 const PORT = process.env.PORT ?? 1234
 
